@@ -25,7 +25,7 @@
 /* USER CODE BEGIN Includes */
 #include "lcd.h"
 #include "gui.h"
-#include "cyh.h"
+#include "pic.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,18 +90,13 @@ int main(void)
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
 	LCD_Init();
-//	LCD_Clear(BLACK);
-//	Gui_Drawbmp(20,20,200,279,gImage_ceshi);
-//	LCD_Clear(WHITE);
-//	Gui_Drawbmp16(100,140,gImage_qq);
-//	LCD_ShowString(112,180,RED,WHITE,16,"QQ",0);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    Gui_Drawbmp(0,0,240,320,gImage_cyh);
+    Gui_Drawbmp(0,0,240,320,gImage_qq);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
